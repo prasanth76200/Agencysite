@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 
-import HeroMarquee from "./components/helper/HeroMarquee";
+// import HeroMarquee from "./components/helper/HeroMarquee";
 import HeroSection from "./components/homePage/Hero-Section";
 import Layout from "./Layouts";
 
