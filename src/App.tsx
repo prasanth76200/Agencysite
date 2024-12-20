@@ -55,7 +55,7 @@ function App() {
       )}
       {/* <CursorAnime/> */}
       <HeroSection />
-      <HeroMarquee />
+ 
 
       {/* <VelocityText/> */}
     </Layout>

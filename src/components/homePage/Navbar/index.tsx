@@ -5,13 +5,14 @@ const Navbar = () => {
                 <nav
                     className="bg-primary rounded-3xl mt-4 w-[300px] h-[70px] md:w-[1200px] md:h-auto shadow-[1px_7px_50px] shadow-secondary ">
                     <div className="md:flex items-center  md:justify-between md:py-1 md:pl-5 ">
-                    <div className="flex  flex-shrink-0 items-center justify-center  md:pl-5 md:pb-1 ">
-                        <a href="/" className="text-white text-3xl font-bold">
-                        <span className="text-white text-2xl items-center font-bold">Meta</span>
+                    <div className="flex flex-shrink-0 items-center justify-center md:justify-start md:pl-5 md:pb-1">
+                    <a href="/" className="text-white text-3xl font-bold">
+                        <span className="text-white text-2xl font-bold">Meta</span>
                         &nbsp;
-                        <span className="text-white text-2xl items-center font-bold">Brainz</span>
-                        </a>
+                        <span className="text-white text-2xl font-bold">Brainz</span>
+                    </a>
                     </div>
+
                     <div className="">
                         <ul
                         className="mt-4 flex flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100"
@@ -44,7 +45,7 @@ const Navbar = () => {
                         </li>
                         <li>
                         <a
-                            className="block px-4 py-2 no-underline outline-none relative group"
+                            className="block px-6 py-2  no-underline outline-none relative group"
                             href="/#about"
                             aria-label="About Section">
                             <div className="text-sm font-bold text-white transition-colors duration-300">

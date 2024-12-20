@@ -5,9 +5,9 @@ import Marquee from "react-fast-marquee";
     return (
       <div>
          {/* Marquee Section with SEO, Website Development, and Digital Marketing */}
-  <div className="mt-[110px] ml-[-100px] mr-[-70px]">
+  <div className="   mt-[100px]   md:mt-[-160px] lg:mt-[-200px]   xl:mt-[-200px]  ml-[0px] ">
   {/* Marquee 1 */}
-  <div className="bg-primary py-4 rounded-sm my-4 relative -rotate-3 cursor-pointer">
+  <div className="bg-primary py-2 rounded-sm my-2 md:my-4 relative -rotate-3 cursor-pointer">
     <Marquee speed={100} pauseOnHover={true} autoFill={true}>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span className="animate-marquee text-[40px] whitespace-nowrap text-center font-bold text-white">
@@ -41,7 +41,7 @@ import Marquee from "react-fast-marquee";
   </div>
 
   {/* Marquee 2 (Opposite direction) */}
-  <div className="bg-secondary mt-[-20px] py-4 rounded-sm my-4 relative -rotate-3">
+  <div className="bg-secondary mt-[-10px] py-2 rounded-sm my-4 relative -rotate-3">
     <Marquee speed={100} pauseOnHover={true} autoFill={true} direction="right">
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span className="animate-marquee text-[40px] whitespace-nowrap text-center font-bold text-white">

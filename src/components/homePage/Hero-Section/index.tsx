@@ -11,7 +11,7 @@ import customberPic from "../../../../public/assets/customer-satisfaction.png";
             {/* Hero Section Title */}
             <div className="grid place-content-center py-10 md:px-4 md:py-14 lg:py-4 xl:py-12  text-yellow-50">
               <h1 className="max-w-5xl text-center text-[34px] whitespace-nowrap md:text-[60px] lg:text-[64px] xl:text-[77px] font-extrabold text-[#252329] leading-snug">We Make It Happen!</h1>
-              <h1 className="max-w-5xl text-center text-[29px]  md:text-[60px] lg:text-[64px]  xl:text-[77px] font-extrabold text-[#252329] leading-snug font-sans">
+              <h1 className="max-w-5xl text-center text-[34px]  md:text-[60px] lg:text-[64px]  xl:text-[77px] font-extrabold text-[#252329] leading-snug font-sans">
               Take Your Business Online and <span className="text-[#e0142f] whitespace-nowrap block text-[34px] md:text-[60px] lg:text-[65px]  xl:text-[77px] font-sans">Grow Beyond Limits.</span>
               </h1>
             </div>
@@ -43,19 +43,20 @@ import customberPic from "../../../../public/assets/customer-satisfaction.png";
 
 
     <div className="md:flex md:justify-between lg:-mt-12 md:mt-28 md:gap-11 md:-ml-5 lg:ml-0 ">
-      <div className="my-[160px] md:my-0 flex justify-center ">
+      <div className="mt-[160px] md:mt-0 flex justify-center ">
          <HeroTestimonial reviewsCount="15+"
             words="&nbsp;reviews on&nbsp;"
             img={true}
             imgSrc={star}
+               width="86px"
             />
       </div>
-      <div className="flex justify-center">
+      <div className="mt-[130px] md:mt-0  flex justify-center">
       <HeroTestimonial reviewsCount="10+"
             words="&nbsp;Happy Clients&nbsp;"
             img={true}
             imgSrc={customberPic}
-            width="36px"
+            width="30px"
             
             />
       </div>
