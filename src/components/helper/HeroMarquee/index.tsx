@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
     return (
       <div>
          {/* Marquee Section with SEO, Website Development, and Digital Marketing */}
-  <div className="   mt-[100px]   md:mt-[-160px] lg:mt-[-200px]   xl:mt-[-200px]  ml-[0px] ">
+  <div className="     md:mt-[-160px] lg:mt-[-200px]   xl:mt-[-200px]  ml-[0px] ">
   {/* Marquee 1 */}
   <div className="bg-primary py-2 rounded-sm my-2 md:my-4 relative -rotate-3 cursor-pointer">
     <Marquee speed={100} pauseOnHover={true} autoFill={true}>

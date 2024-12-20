@@ -5,6 +5,7 @@ import HeroSection from "./components/homePage/Hero-Section";
 import Layout from "./Layouts";
 
 import AnimatedCursor from "react-animated-cursor";
+import StorySection from "./components/homePage/Story-Section";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -53,11 +54,9 @@ function App() {
           ]}
         />
       )}
-      {/* <CursorAnime/> */}
+    
       <HeroSection />
- 
-
-      {/* <VelocityText/> */}
+     
     </Layout>
   );
 }
