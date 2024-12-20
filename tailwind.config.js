@@ -26,7 +26,8 @@ export default {
         // warning: "#f59e0b", // Amber for warnings
       },
       fontFamily: {
-        sans: ["Inter", "Roboto", "sans-serif"], // Clean and modern sans-serif fonts
+        sans: ["Inter", "Roboto", "sans-serif"],
+        Caveat : ["Caveat"],// Clean and modern sans-serif fonts
         serif: ["Merriweather", "serif"], // Serif for formal text
         mono: ["Fira Code", "monospace"], // Monospace for code snippets
       },

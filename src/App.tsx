@@ -1,21 +1,45 @@
-import Layout from "./Layouts"
+// import React from "react";
+// import CursorAnime from "./components/helper/CursorAnime";
+import HeroMarquee from "./components/helper/HeroMarquee";
+import HeroSection from "./components/homePage/Hero-Section";
+import Layout from "./Layouts";  // Ensure Layout expects children
 
-
-
+import AnimatedCursor from "react-animated-cursor";
 
 function App() {
-
-
   return (
-  
     <Layout>
-    {/* Child content goes here */}
-    {/* <section className="container mx-auto p-6">
-      <h2 className="text-3xl font-semibold">Welcome to MyApp</h2>
-      <p className="mt-4">This is where your main content will appear.</p>
-    </section> */}
-  </Layout>
-  )
+      <AnimatedCursor
+        innerSize={30}
+        outerSize={60}
+        color="35, 35, 255"
+        outerAlpha={0.4}
+        innerScale={0.7}
+        outerScale={5}
+        outerStyle={{
+          color: "35, 35, 255",
+        }}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
+      {/* <CursorAnime/> */}
+      <HeroSection />
+      <HeroMarquee />
+
+      {/* <VelocityText/> */}
+    </Layout>
+  );
 }
 
-export default App
+export default App;

@@ -14,20 +14,46 @@
   
   body {
     color: rgb(var(--foreground-rgb));
-    background-color: #e6e0d7;
+    background-color: #f1f1f1;
     
       width: 99.8%;
       height: 99vh; /* Make it fill the viewport height */
       // border: 1px solid #fff4f4;
       // border-radius: 10px;
-      background-image: linear-gradient(#dad8d8 5px, transparent 1px),
-                        linear-gradient(90deg, #dad8d8 5px, transparent 1px);
+      background-image: linear-gradient(#e6e5e5 5px, transparent 1px),
+                        linear-gradient(90deg, #e6e5e5 5px, transparent 1px);
       background-size: 90px 90px; /* Adjust size of the grid squares */
-      overflow: hidden;
+      overflow: scroll;
   
   }
   
  
+  @keyframes marquee {
+    0% {
+      transform: translateX(80%); /* Start from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left */
+    }
+  }
+  
+  .animate-marquee {
+    animation: marquee 20s linear infinite;;
+  }
+  
+
+  @keyframes reverse-marquee {
+    0% {
+      transform: translateX(-80%); /* Start from the left */
+    }
+    100% {
+      transform: translateX(100%); /* Move to the right */
+    }
+  }
+  
+  .animate-marquee-revserse {
+    animation: reverse-marquee  20s linear infinite;
+  }
   
   // .sticky-card {
   //   // padding-top: calc(var(--index) * 2.5rem);
