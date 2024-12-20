@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: rgb(211, 216, 232);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 255, 255, 255;
+    }
+  }
+  
+  body {
+    color: rgb(var(--foreground-rgb));
+    background-color: #e6e0d7;
+    
+      width: 99.8%;
+      height: 99vh; /* Make it fill the viewport height */
+      // border: 1px solid #fff4f4;
+      // border-radius: 10px;
+      background-image: linear-gradient(#dad8d8 5px, transparent 1px),
+                        linear-gradient(90deg, #dad8d8 5px, transparent 1px);
+      background-size: 90px 90px; /* Adjust size of the grid squares */
+      overflow: hidden;
+  
+  }
+  
+ 
+  
+  // .sticky-card {
+  //   // padding-top: calc(var(--index) * 2.5rem);
+  //   top: calc(var(--index) * 4rem);
+  // }
