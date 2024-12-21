@@ -4,7 +4,7 @@ import  { useEffect, useState } from "react";
 import HeroSection from "./components/homePage/Hero-Section";
 import Layout from "./Layouts";
 
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 import HeroMarquee from "./components/helper/HeroMarquee";
 import StorySection from "./components/homePage/Story-Section";
 import Services from "./components/homePage/Services";
