@@ -7,6 +7,9 @@ import Layout from "./Layouts";
 import AnimatedCursor from "react-animated-cursor";
 import HeroMarquee from "./components/helper/HeroMarquee";
 import StorySection from "./components/homePage/Story-Section";
+import Services from "./components/homePage/Services";
+import RainbowCursor from "./components/helper/CursorAnime";
+// import ChatBot from "./components/helper/ChatBot";
 // import StorySection from "./components/homePage/Story-Section";
 
 function App() {
@@ -31,35 +34,38 @@ function App() {
     <Layout>
       {/* Conditionally render AnimatedCursor based on the screen size */}
       {!isMobile && (
-        <AnimatedCursor
-          innerSize={30}
-          outerSize={60}
-          color="35, 35, 255"
-          outerAlpha={0.4}
-          innerScale={0.7}
-          outerScale={5}
-          outerStyle={{
-            color: "35, 35, 255",
-          }}
-          clickables={[
-            "a",
-            'input[type="text"]',
-            'input[type="email"]',
-            'input[type="number"]',
-            'input[type="submit"]',
-            'input[type="image"]',
-            "label[for]",
-            "select",
-            "textarea",
-            "button",
-            ".link",
-          ]}
-        />
+        // <AnimatedCursor
+        //   innerSize={30}
+        //   outerSize={60}
+        //   color="35, 35, 255"
+        //   outerAlpha={0.4}
+        //   innerScale={0.7}
+        //   outerScale={5}
+        //   outerStyle={{
+        //     color: "35, 35, 255",
+        //   }}
+        //   clickables={[
+        //     "a",
+        //     'input[type="text"]',
+        //     'input[type="email"]',
+        //     'input[type="number"]',
+        //     'input[type="submit"]',
+        //     'input[type="image"]',
+        //     "label[for]",
+        //     "select",
+        //     "textarea",
+        //     "button",
+        //     ".link",
+        //   ]}
+        // />
+        <RainbowCursor/>
       )}
     
+    {/* <ChatBot/> */}
       <HeroSection />
       <HeroMarquee/>
       <StorySection />
+      <Services/>
     </Layout>
   );
 }
