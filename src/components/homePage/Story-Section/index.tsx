@@ -1,6 +1,7 @@
 // import up from '../../../../public/assets/trend(1).png';
 import sad from '../../../../public/assets/rising-cost-living-concern-concept.jpg';
 import happy from '../../../../public/assets/portrait-man-shopping-buying-consumer-goods.jpg';
+import rightChain from '../../../../public/assets/chains.png';
 const StorySection = () => {
     return (
         <div className="mt-[80px] lg:mt-[100px] mx-auto my-auto">
@@ -10,21 +11,17 @@ const StorySection = () => {
                     Simple Story - Makes your Business
                     <span className="text-[#FF000D] font-sans font-bold  text-[50px] md:text-[56px] lg:text-[70px] xl:text-[70px]"> 100x</span>
                      </h1>
-                     &nbsp;
-                     {/* <div className="mb-[] ">
-                     <img loading="lazy" src={up} alt="" className="w-[40px] xl:w-[130px] mb-9" />
-
-                     </div> */}
-            </div>
-            {/* <div className="flex justify-center">
-                <h1 className="text-black font-Caveat font-bold text-[70px]">
-                Imagine this
-            </h1> 
-                     
-            </div> */}
-      <div className="mt-[30px] flex justify-center items-center">
-      
-        <div className="text-black bg-white px-5 py-5 rounded-lg shadow-2xl shadow-secondary grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-7xl"> 
+                     &nbsp;     
+                   </div> 
+                   <div className=" hidden md:block absolute md:left-[500px] lg:left-[500px]  xl:left-[200px]  2xl:left-[500px] -z-50">
+                    <img src={rightChain} alt="" className='w-[120px] rotate-45 opacity-70' />
+                   </div>
+                   <div className="hidden md:block absolute md:right-[500px] lg:right-[500px] xl:right-[200px] 2xl:right-[500px] -z-50">
+                    <img src={rightChain} alt="" className='w-[120px] rotate-45 opacity-70 ' />
+                   </div>
+                  
+      <div className="mt-[100px] flex justify-center items-center">
+        <div className="text-black bg-white px-5 py-5 rounded-lg shadow-2xl shadow-secondary grid grid-cols-1 sm:grid-cols-2 gap-4 w-full xl:max-w-6xl  2xl:max-w-7xl"> 
           <div className="flex justify-center items-center rounded-lg font-sans text-[20px] md:text-[23px] xl:text-[30px] py-2">
             <p className=''> <span className='bg-[#FF000D] py-1 rounded-md px-2 text-white'>Vishal</span> runs a small business that he’s been doing for years. He has loyal customers who visit 
                 regularly and loves the personal connections he’s built. But there's a problem—his business only reaches 

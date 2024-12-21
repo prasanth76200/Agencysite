@@ -20,7 +20,7 @@ import ConfettiFromBottom from "../../helper/ConfettiFromBottom";
             <div className="hidden md:block absolute md:top-[300px] md:left-[-10px]  xl:top-[280px] xl:left-[70px] 2xl:top-[280px] 2xl:left-[100px] rotate-6 opacity-35 ">
       <img loading="lazy" src={loveArrow} alt="" width={"130px"} />
     </div>
-    <div className="hidden md:block lg:block absolute md:top-[250px] md:left-[600px] lg:-rotate-45  xl:top-[220px] xl:left-[1000px] xl:-rotate-12 2xl:top-[220px] 2xl:left-[1240px]  opacity-35 ">
+    <div className="hidden md:block lg:block absolute md:top-[250px] md:right-[00px] lg:-rotate-45  xl:top-[220px] xl:right-[10px] xl:-rotate-12 2xl:top-[220px] 2xl:right-[70px]  opacity-35 ">
       <img loading="lazy" src={downLeft} alt="" width={"180px"} className=" xl:w-[170px]" />
     </div>
 
