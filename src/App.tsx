@@ -5,6 +5,8 @@ import HeroSection from "./components/homePage/Hero-Section";
 import Layout from "./Layouts";
 
 import AnimatedCursor from "react-animated-cursor";
+import HeroMarquee from "./components/helper/HeroMarquee";
+import StorySection from "./components/homePage/Story-Section";
 // import StorySection from "./components/homePage/Story-Section";
 
 function App() {
@@ -56,7 +58,8 @@ function App() {
       )}
     
       <HeroSection />
-     
+      <HeroMarquee/>
+      <StorySection />
     </Layout>
   );
 }
