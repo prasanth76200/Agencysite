@@ -12,7 +12,7 @@ const StorySection = () => {
                      </h1>
                      &nbsp;
                      <div className="mb-[]">
-                     <img src={up} alt="" className='w-[130px] mb-9' />
+                     <img loading="lazy" src={up} alt="" className='w-[130px] mb-9' />
 
                      </div>
             </div>
@@ -36,10 +36,10 @@ const StorySection = () => {
                
           </div>
           <div className="flex justify-center items-center  ">
-            <img src={sad} alt="" className=' rounded-r-lg' />
+            <img loading='lazy' src={sad} alt="" className=' rounded-r-lg' />
           </div>
           <div className="flex justify-center items-center mt-[90px]  ">
-            <img src={happy} alt="" className=' rounded-l-lg' />
+            <img loading='lazy' src={happy} alt="" className=' rounded-l-lg' />
           </div>
           <div className="flex justify-center items-center rounded-lg font-sans text-[30px] mt-[90px]  ">
             <p className='p3'>Then, there's Aryan. <span className='bg-primary py-1 rounded-md px-2 text-white'>Aryan</span> also has a business, but he made a decision to take it online. 

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
     --foreground-rgb: rgb(211, 216, 232);
   }
@@ -11,15 +16,13 @@
       --foreground-rgb: 255, 255, 255;
     }
   }
-  
+
   body {
     color: rgb(var(--foreground-rgb));
     background-color: #f1f1f1;
     
       width: 99.8%;
-      height: 99vh; /* Make it fill the viewport height */
-      // border: 1px solid #fff4f4;
-      // border-radius: 10px;
+      height: 99vh; 
       background-image: linear-gradient(#e6e5e5 5px, transparent 1px),
                         linear-gradient(90deg, #e6e5e5 5px, transparent 1px);
       background-size: 90px 90px; /* Adjust size of the grid squares */
