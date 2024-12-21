@@ -71,7 +71,7 @@ import ConfettiFromBottom from "../../helper/ConfettiFromBottom";
                width="126px"
             />
       </div>
-      <div className="mt-[130px] md:mt-0  flex justify-center">
+      <div className="mt-[90px] md:mt-0  flex justify-center">
       <HeroTestimonial reviewsCount="10+"
             words="&nbsp;Happy Clients&nbsp;"
             img={true}

@@ -12,7 +12,7 @@ export default {
         sm: "2rem",
         lg: "2rem", // Increased padding on laptop screens
         xl: "3rem", // Further increase on extra-large screens
-        "2xl": "4rem", // Maximum padding for very large screens
+        "2xl": "rem", // Maximum padding for very large screens
       },
     },
     extend: {

@@ -4,7 +4,7 @@ const Navbar = () => {
         <div className="flex justify-center">
         <nav
             className="bg-primary rounded-3xl mt-6 w-[300px] h-[70px] md:w-[900px] md:h-auto shadow-[0px_4px_15px] shadow-primary ">
-            <div className="md:flex items-center  md:justify-between md:py-1 md:pl-5 ">
+            <div className="md:flex items-center  md:justify-between md:py-0 md:pl-5 ">
             <div className="flex flex-shrink-0 items-center justify-center md:justify-start md:pl-5 my-3 md:pb-1">
             <a href="/" className="text-white text-3xl font-bold">
                 <span className="text-white text-3xl font-bold">Meta</span>

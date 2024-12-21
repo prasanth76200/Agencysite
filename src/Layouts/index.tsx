@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import HeroMarquee from "../components/helper/HeroMarquee";
+// import HeroMarquee from "../components/helper/HeroMarquee";
 import Navbar from "../components/homePage/Navbar";
-import StorySection from "../components/homePage/Story-Section";
 
+// import { Analytics } from "@vercel/analytics/react"
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -20,26 +20,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="text-white">
+      {/* <Analytics/> */}
       {/* Navbar and Main Content */}
       <div
-        className={`container relative w-full min-h-screen px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[98rem] fade-in ${
+        className={`container p-0  relative w-full min-h-screen  lg:max-w-[70rem] xl:max-w-[80rem] 2xl:max-w-[112rem] fade-in ${
           isVisible ? "visible" : ""
         }`}
       >
         <Navbar />
-        <main>{children}</main>
-      </div>
-
-      {/* Hero Marquee Section */}
-      <HeroMarquee />
-
-      {/* Story Section */}
-      <div
-        className={`container relative w-full min-h-screen px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[98rem] fade-in ${
-          isVisible ? "visible" : ""
-        }`}
-      >
-        <StorySection />
+        <main className="pb-[2000px]">{children}</main>
       </div>
     </div>
   );
