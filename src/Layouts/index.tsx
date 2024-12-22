@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* <Analytics/> */}
       {/* Navbar and Main Content */}
       <div
-        className={`container p-0  relative w-full min-h-screen  lg:max-w-[70rem] xl:max-w-[80rem] 2xl:max-w-[112rem] fade-in ${
+        className={`container p-0 relative w-full min-h-screen  lg:max-w-[70rem] xl:max-w-[80rem] 2xl:max-w-[112rem] fade-in ${
           isVisible ? "visible" : ""
         }`}
       >

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -17,13 +18,12 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#2323FF", // A bold blue for primary actions
-        secondary: "#fe019a", // A vibrant purple for accents
-        // neutral: "#64748b", // A grayish blue for text
-        // background: "#f3f4f6", // A light gray background
-        // danger: "#dc2626", // Red for error states
-        // success: "#16a34a", // Green for success messages
-        // warning: "#f59e0b", // Amber for warnings
+        primary: "#2323FF",
+        secondary: "#fe019a",
+        backgroundLight: "#f3f4f6", // Light mode background
+        backgroundDark: "#121212", // Dark mode background
+        textLight: "#1a1a1a", // Light mode text
+        textDark: "#e0e0e0", // Dark mode text
       },
       fontFamily: {
         sans: ["Inter", "Roboto", "sans-serif"],

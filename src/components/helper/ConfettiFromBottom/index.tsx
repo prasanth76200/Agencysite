@@ -14,17 +14,17 @@ const ConfettiFromBottom = () => {
       setTimeout(() => {
         const frame = () => {
           confetti({
-            particleCount: 5,
-            angle: 60,
-            spread: 55,
+            particleCount: 20,
+            angle: 30,
+            spread: 125,
             origin: { x: 0 },
             colors: colors,
           });
 
           confetti({
-            particleCount: 5,
-            angle: 120,
-            spread: 55,
+            particleCount: 20,
+            angle: 150,
+            spread: 125,
             origin: { x: 1 },
             colors: colors,
           });
@@ -38,7 +38,7 @@ const ConfettiFromBottom = () => {
       }, 1000); // Add a delay before starting the confetti animation
 
       // Set isNewUser flag in localStorage to indicate the user has visited
-      localStorage.setItem("isNewUser", "false");
+      // localStorage.setItem("isNewUser", "false");
     }
 
     // Cleanup confetti when component unmounts

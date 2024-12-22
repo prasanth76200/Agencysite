@@ -11,9 +11,9 @@ import ConfettiFromBottom from "../../helper/ConfettiFromBottom";
           <div className="">
             {/* Hero Section Title */}
             <div className="  grid place-content-center py-10 md:px-4 md:py-14 lg:py-4 xl:py-12   text-yellow-50">
-              <h1 className="max-w-5xl text-center text-[34px] whitespace-nowrap md:text-[60px] lg:text-[54px] xl:text-[67px]  2xl:text-[77px] font-extrabold text-[#252329] leading-snug">We Make It Happen!</h1>
-              <h1 className="max-w-5xl text-center text-[34px]  md:text-[60px] lg:text-[64px]  xl:text-[67px]  2xl:text-[77px] font-extrabold text-[#252329] leading-snug font-sans">
-              Take Your Business Online  <span className="text-[#e0142f] whitespace-nowrap block text-[34px] md:text-[60px] lg:text-[65px] xl:text-[67px]  2xl:text-[77px] font-sans">Grow Beyond Limits.</span>
+              <h1 className="max-w-5xl text-center text-[34px] whitespace-nowrap md:text-[60px] lg:text-[54px] xl:text-[67px]  2xl:text-[77px] font-extrabold text-[#252329] dark:text-textDark  leading-snug">We Make It Happen!</h1>
+              <h1 className="max-w-5xl text-center text-[34px]  md:text-[60px] lg:text-[64px]  xl:text-[67px]  2xl:text-[77px] font-extrabold text-[#252329] dark:text-textDark  leading-snug font-sans">
+              Take Your Business Online  <span className="text-[#e0142f] dark:text-secondary whitespace-nowrap block text-[34px] md:text-[60px] lg:text-[65px] xl:text-[67px]  2xl:text-[77px] font-sans">Grow Beyond Limits.</span>
               </h1>
             </div>
 
@@ -32,16 +32,9 @@ import ConfettiFromBottom from "../../helper/ConfettiFromBottom";
      className="px-6 py-2 font-medium rounded-3xl bg-indigo-500 text-white transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
       Contact Us
     </button>
-    {/* <a
-  href="https://forms.gle/riNyG9Pb43MLEmxb7"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-6 py-2 font-medium rounded-3xl bg-indigo-500 text-white transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
->
-  Contact Us
-</a> */}
+  
   </div>
-  <span className="text-black hidden xl:block ml-[-15px] mr-[-21px]">---------</span>
+  <span className="text-black hidden xl:block ml-[-15px] mr-[-21px] dark:text-textDark ">---------</span>
   <div className="flex items-center justify-center">
     <button className="text-black border font-medium bg-green-200 border-black rounded-2xl px-3 py-1 hover:bg-green-300 font-mono">
       Download Brochure

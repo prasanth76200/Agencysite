@@ -7,8 +7,10 @@ import Layout from "./Layouts";
 // import AnimatedCursor from "react-animated-cursor";
 import HeroMarquee from "./components/helper/HeroMarquee";
 import StorySection from "./components/homePage/Story-Section";
-import Services from "./components/homePage/Services";
+// import Services from "./components/homePage/Services";
 import RainbowCursor from "./components/helper/CursorAnime";
+// import DarkModeToggle from "./components/helper/DarkModeButton";
+
 // import ChatBot from "./components/helper/ChatBot";
 // import StorySection from "./components/homePage/Story-Section";
 
@@ -62,10 +64,12 @@ function App() {
       )}
     
     {/* <ChatBot/> */}
+      {/* <DarkModeToggle /> */}
       <HeroSection />
       <HeroMarquee/>
       <StorySection />
-      <Services/>
+      {/* <Services/> */}
+    
     </Layout>
   );
 }
