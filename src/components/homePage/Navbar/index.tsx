@@ -10,7 +10,7 @@ const Navbar = () => {
           backgroundSize: "30px 30px",
           backgroundPosition: "-5px -5px",
         }}
-        className="bg-primary rounded-3xl mt-6 w-[300px] h-[70px] md:w-[900px] md:h-auto shadow-[0px_4px_15px] shadow-primary"
+        className="bg-primary rounded-3xl mt-6 w-[350px] h-[70px] md:w-[900px] md:h-auto shadow-[0px_4px_15px] shadow-primary"
       >
         <div className="md:flex items-center md:justify-between md:py-0 md:pl-5">
           <div className="flex flex-shrink-0 items-center justify-center md:justify-start md:pl-5 my-3 md:pb-1">
@@ -64,7 +64,7 @@ const Navbar = () => {
             </ul>
 
             {/* Dark Mode Toggle visible on both mobile and desktop */}
-            <div className=" absolute right-[15px] mt-2    px-4  md:mt-1 md:static">
+            <div className=" absolute right-[15px] mt-[-50px] px-4  md:mt-1 md:static">
               <DarkModeToggle />
             </div>
           </div>
