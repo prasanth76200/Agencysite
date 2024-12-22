@@ -4,9 +4,14 @@ import happy from '../../../../public/assets/portrait-man-shopping-buying-consum
 import rightChain from '../../../../public/assets/chains.png';
 const StorySection = () => {
     return (
-        <div className="mt-[80px] lg:mt-[100px] mx-auto my-auto">
-            <div className="flex justify-center">
-                <h1 className="text-black bg-white px-4 rounded-lg font-sans shadow-lg shadow-primary font-bold text-[50px] md:text-[56px] lg:text-[40px] xl:text-[50px] xl:whitespace-nowrap ">
+        <div  className="mt-[80px] lg:mt-[100px] mx-auto my-auto">
+            <div  className="flex justify-center">
+                <h1   style={{
+          backgroundImage:
+            "radial-gradient(rgba(0,0,0, 0.10) 2px, transparent 0)",
+          backgroundSize: "30px 30px",
+          backgroundPosition: "-5px -5px",
+        }} className="text-black bg-white px-4 rounded-lg font-sans shadow-lg shadow-primary font-bold text-[50px] md:text-[56px] lg:text-[40px] xl:text-[50px] xl:whitespace-nowrap ">
                     <span className="text-secondary font-bold  text-[50px] md:text-[60px] lg:text-[70px] xl:text-[70px]">A </span> 
                     Simple Story - Makes your Business
                     <span className="text-[#FF000D] font-sans font-bold  text-[50px] md:text-[56px] lg:text-[70px] xl:text-[70px]"> 100x</span>

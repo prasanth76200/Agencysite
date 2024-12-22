@@ -7,7 +7,7 @@ import Layout from "./Layouts";
 // import AnimatedCursor from "react-animated-cursor";
 import HeroMarquee from "./components/helper/HeroMarquee";
 import StorySection from "./components/homePage/Story-Section";
-// import Services from "./components/homePage/Services";
+import Services from "./components/homePage/Services";
 import RainbowCursor from "./components/helper/CursorAnime";
 // import DarkModeToggle from "./components/helper/DarkModeButton";
 
@@ -68,7 +68,7 @@ function App() {
       <HeroSection />
       <HeroMarquee/>
       <StorySection />
-      {/* <Services/> */}
+      <Services/>
     
     </Layout>
   );

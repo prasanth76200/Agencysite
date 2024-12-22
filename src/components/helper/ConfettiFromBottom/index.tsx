@@ -38,7 +38,7 @@ const ConfettiFromBottom = () => {
       }, 1000); // Add a delay before starting the confetti animation
 
       // Set isNewUser flag in localStorage to indicate the user has visited
-      // localStorage.setItem("isNewUser", "false");
+      localStorage.setItem("isNewUser", "false");
     }
 
     // Cleanup confetti when component unmounts
