@@ -28,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         }`}
       >
         <Navbar />
-        <main className="pb-[2000px]">{children}</main>
+        <main className="">{children}</main>
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ const Services = () => {
             "radial-gradient(rgba(0,0,0, 0.10) 2px, transparent 0)",
           backgroundSize: "30px 30px",
           backgroundPosition: "-5px -5px",
-        }} className="flex items-center mt-4 bg-white shadow-lg shadow-primary  text-black  px-4 rounded-lg font-sans  font-bold text-[40px]  md:text-[56px] lg:text-[40px] xl:text-[50px] xl:whitespace-nowrap ">
+        }} className="flex items-center mt-4 dark:bg-backgroundDark   dark:text-textDark  bg-white shadow-lg shadow-primary  text-black  px-4 rounded-lg font-sans  font-bold text-[40px]  md:text-[56px] lg:text-[40px] xl:text-[50px] xl:whitespace-nowrap ">
          <h1 className="">
             Our Game-Changing Solutions
           </h1>

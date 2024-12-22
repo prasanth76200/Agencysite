@@ -9,6 +9,9 @@ import HeroMarquee from "./components/helper/HeroMarquee";
 import StorySection from "./components/homePage/Story-Section";
 import Services from "./components/homePage/Services";
 import RainbowCursor from "./components/helper/CursorAnime";
+import Footer from "./components/homePage/Footer";
+import Faqs from "./components/helper/FAQ";
+import { Helmet } from "react-helmet-async";
 // import DarkModeToggle from "./components/helper/DarkModeButton";
 
 // import ChatBot from "./components/helper/ChatBot";
@@ -33,44 +36,31 @@ function App() {
   }, []);
 
   return (
+    <>
+     <Helmet>
+        <title>Meta Brainz - Your Development Partner</title>
+        <meta name="description" content="Meta Brainz specializes in top-notch web and app development services tailored to your needs." />
+        <meta property="og:title" content="Meta Brainz - Your Development Partner" />
+        <meta property="og:description" content="Meta Brainz specializes in top-notch web and app development services tailored to your needs." />
+        <meta property="og:image" content="s" />
+        <meta property="og:url" content="https://agencysite-alpha.vercel.app/" />
+        <link rel="canonical" href="https://agencysite-alpha.vercel.app/" />
+      </Helmet>
     <Layout>
       {/* Conditionally render AnimatedCursor based on the screen size */}
       {!isMobile && (
-        // <AnimatedCursor
-        //   innerSize={30}
-        //   outerSize={60}
-        //   color="35, 35, 255"
-        //   outerAlpha={0.4}
-        //   innerScale={0.7}
-        //   outerScale={5}
-        //   outerStyle={{
-        //     color: "35, 35, 255",
-        //   }}
-        //   clickables={[
-        //     "a",
-        //     'input[type="text"]',
-        //     'input[type="email"]',
-        //     'input[type="number"]',
-        //     'input[type="submit"]',
-        //     'input[type="image"]',
-        //     "label[for]",
-        //     "select",
-        //     "textarea",
-        //     "button",
-        //     ".link",
-        //   ]}
-        // />
         <RainbowCursor/>
       )}
     
-    {/* <ChatBot/> */}
-      {/* <DarkModeToggle /> */}
       <HeroSection />
       <HeroMarquee/>
       <StorySection />
       <Services/>
+      <Faqs/>
+      <Footer/>
     
     </Layout>
+    </>
   );
 }
 
