@@ -42,7 +42,7 @@ function App() {
         <meta name="description" content="Meta Brainz specializes in top-notch web and app development services tailored to your needs." />
         <meta property="og:title" content="Meta Brainz - Your Development Partner" />
         <meta property="og:description" content="Meta Brainz specializes in top-notch web and app development services tailored to your needs." />
-        <meta property="og:image" content="s" />
+        <meta property="og:image" content="https://agencysite-alpha.vercel.app/assets/Screenshot from 2024-12-22 21-26-56.png" />
         <meta property="og:url" content="https://agencysite-alpha.vercel.app/" />
         <link rel="canonical" href="https://agencysite-alpha.vercel.app/" />
       </Helmet>
