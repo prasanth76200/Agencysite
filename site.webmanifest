@@ -1,0 +1,9 @@
+{
+  "name": "Meta Brainz",
+  "short_name": "Meta Brainz",
+  "description": "Meta Brainz specializes in cutting-edge web and app development, offering responsive designs and scalable solutions using modern technologies like MERN and Spring Boot.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5a67d8"
+}
