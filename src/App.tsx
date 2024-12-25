@@ -9,9 +9,10 @@ import HeroMarquee from "./components/helper/HeroMarquee";
 import StorySection from "./components/homePage/Story-Section";
 import Services from "./components/homePage/Services";
 import RainbowCursor from "./components/helper/CursorAnime";
-import Footer from "./components/homePage/Footer";
-import Faqs from "./components/helper/FAQ";
+// import Footer from "./components/homePage/Hookie";
+import Faqs from "./components/homePage/FAQ";
 import { Helmet } from "react-helmet-async";
+import Hookie from "./components/homePage/Hookie";
 // import DarkModeToggle from "./components/helper/DarkModeButton";
 
 // import ChatBot from "./components/helper/ChatBot";
@@ -51,13 +52,15 @@ function App() {
       {!isMobile && (
         <RainbowCursor/>
       )}
+      
     
       <HeroSection />
       <HeroMarquee/>
       <StorySection />
       <Services/>
+      <Hookie/>
       <Faqs/>
-      <Footer/>
+      {/* <Footer/> */}
     
     </Layout>
     </>

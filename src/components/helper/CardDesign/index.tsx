@@ -1,21 +1,35 @@
+import React from 'react';
+
 interface CardDesignProps {
-    headLine: string;
-    words: string;
-    img: boolean;
-    imgSrc?: string;
-    width:string;
-  }
-  
-  const CardDesign: React.FC<CardDesignProps> = ({ headLine, words, img, imgSrc ,width}) => {
-    return (
-      <div>
-        <div className="relative mt-10 flex w-80 flex-col rounded-xl  dark:bg-backgroundDark  dark:text-textLight bg-white bg-clip-border text-gray-700 shadow-lg hover:shadow-md hover:shadow-secondary transition-all duration-300 hover:-translate-y-1">
+  headLine: string;
+  words: string;
+  img: boolean;
+  imgSrc?: string;
+  width: string;
+  loading: boolean; 
+  onLoad?: () => void; // Add a loading prop
+}
+
+const CardDesign: React.FC<CardDesignProps> = ({ headLine, words, img, imgSrc, width, loading,  onLoad }) => {
+  return (
+    <div>
+      <div className="relative mt-10 flex w-80 flex-col rounded-xl dark:bg-backgroundDark dark:text-textLight bg-white bg-clip-border text-gray-700 shadow-lg hover:shadow-md hover:shadow-secondary transition-all duration-300 hover:-translate-y-1">
+        {/* Skeleton Loader for Image */}
+        {loading ? (
+          <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group bg-gray-300 animate-pulse">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 opacity-90"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px] animate-pulse"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-20 h-20 bg-gray-400 rounded-full animate-pulse"></div> {/* Placeholder for Image */}
+            </div>
+          </div>
+        ) : (
           <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 opacity-90"></div>
             <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px] animate-pulse"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               {img && imgSrc ? (
-                <img loading="lazy" src={imgSrc} alt="Star" width={width} />
+                <img loading="lazy"   onLoad={onLoad} src={imgSrc} alt="Star" width={width} />
               ) : (
                 <svg
                   viewBox="0 0 24 24"
@@ -29,21 +43,31 @@ interface CardDesignProps {
               )}
             </div>
           </div>
+        )}
+
+        {/* Skeleton Loader for Text */}
+        {loading ? (
+          <div className="p-6">
+            <div className="w-full h-6 bg-gray-300 rounded-md mb-2 animate-pulse"></div> {/* Placeholder for Headline */}
+            <div className="w-full h-4 bg-gray-300 rounded-md mb-4 animate-pulse"></div> {/* Placeholder for Words */}
+          </div>
+        ) : (
           <div className="p-6">
             <h5 className="mb-2 dark:text-textDark block font-sans whitespace-nowrap text-center text-2xl font-semibold leading-snug tracking-normal text-gray-900 antialiased group-hover:text-blue-600 transition-colors duration-300">
               {headLine}
             </h5>
-            <p className="block dark:text-textDark  font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+            <p className="block dark:text-textDark font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
               {words}
             </p>
           </div>
-          <div className="p-6 pt-0">
-            {/* Your button or any other content */}
-          </div>
+        )}
+        
+        <div className="p-6 pt-0">
+          {/* Your button or any other content */}
         </div>
       </div>
-    );
-  };
-  
-  export default CardDesign;
-  
+    </div>
+  );
+};
+
+export default CardDesign;

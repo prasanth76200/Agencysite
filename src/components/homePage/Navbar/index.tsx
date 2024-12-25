@@ -10,7 +10,7 @@ const Navbar = () => {
           backgroundSize: "30px 30px",
           backgroundPosition: "-5px -5px",
         }}
-        className="bg-primary rounded-3xl mt-6 w-[350px] h-[70px] md:w-[900px] md:h-auto shadow-[0px_4px_15px] shadow-primary"
+        className="bg-primary  rounded-3xl mt-6 w-[350px] h-[70px] md:w-[900px] md:h-auto shadow-[0px_4px_15px] shadow-primary"
       >
         <div className="md:flex items-center md:justify-between md:py-0 md:pl-5">
           <div className="flex flex-shrink-0 items-center justify-center md:justify-start md:pl-5 my-3 md:pb-1">
@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex flex-col md:flex-row items-start">
-            <ul
+            {/* <ul
               className="mt-4 flex flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100"
               id="navbar-default"
             >
@@ -61,7 +61,7 @@ const Navbar = () => {
                   <span className="absolute left-1/2 bottom-0 transform -translate-x-1/2 w-0 h-0 rounded-full border-2 border-white opacity-0 transition-all duration-300 group-hover:w-[70px] group-hover:h-9 group-hover:opacity-100"></span>
                 </a>
               </li>
-            </ul>
+            </ul> */}
 
             {/* Dark Mode Toggle visible on both mobile and desktop */}
             <div className=" absolute right-[15px] mt-[-50px] px-4  md:mt-1 md:static">

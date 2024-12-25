@@ -44,7 +44,7 @@ function Faqs() {
         <h1 className="uppercase text-center text-4xl dark:text-white text-black font-bold pt-2 pb-4">
           FAQ
         </h1>
-        <div className="h-fit border shadow-xl shadow-purple-400 rounded-lg p-2 border-black dark:bg-[#111111] bg-[#ffffff]">
+        <div className="h-fit border shadow-xl shadow-purple-400 rounded-lg p-2 border-black dark:bg-backgroundDark bg-backgroundLight">
           {tabs.map((tab, index) => (
             <motion.div
               key={index}
