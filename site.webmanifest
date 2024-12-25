@@ -5,5 +5,19 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#5a67d8"
-}
+  "theme_color": "#5a67d8",
+  
+    "icons": [
+      {
+        "src": "favicon/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "favicon/favicon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      }
+    ]
+  }
+  

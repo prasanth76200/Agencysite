@@ -1,5 +1,6 @@
   
 import Marquee from "react-fast-marquee";
+import logo from "../../../../public/assets/mb-logo.png"
   
 const HeroMarquee = () => {
   return (
@@ -11,7 +12,11 @@ const HeroMarquee = () => {
   <Marquee speed={100} pauseOnHover={true} autoFill={true}>
     &nbsp;&nbsp;&nbsp;&nbsp;
     <span className="animate-marquee text-[40px] whitespace-nowrap text-center font-bold text-white">
-    @AI-Powered Solutions
+    <div className="flex">
+              <img src={logo} alt="" width={60}  />
+              AI-Powered Solutions
+            </div>
+  
     </span>
     &nbsp;&nbsp;&nbsp;&nbsp;
     <span className="animate-marquee text-[40px] whitespace-nowrap text-center font-bold text-white">
@@ -53,7 +58,10 @@ const HeroMarquee = () => {
   <Marquee speed={100} pauseOnHover={true} autoFill={true} direction="right">
   &nbsp;&nbsp;&nbsp;&nbsp;
     <span className="animate-marquee text-[40px] whitespace-nowrap text-center font-bold text-white">
-    @AI-Powered Solutions
+    <div className="flex">
+              <img src={logo} alt="" width={60}  />
+              AI-Powered Solutions
+            </div>
     </span>
     &nbsp;&nbsp;&nbsp;&nbsp;
     <span className="animate-marquee text-[40px] whitespace-nowrap text-center font-bold text-white">
