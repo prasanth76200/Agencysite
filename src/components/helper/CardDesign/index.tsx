@@ -20,7 +20,7 @@ const CardDesign: React.FC<CardDesignProps> = ({ headLine, words, img, imgSrc, w
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 opacity-90"></div>
             <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px] animate-pulse"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 bg-gray-400 rounded-full animate-pulse"></div> {/* Placeholder for Image */}
+              <div className="w-[400px] h-[400px] bg-gray-400  animate-pulse"></div> {/* Placeholder for Image */}
             </div>
           </div>
         ) : (
@@ -48,8 +48,9 @@ const CardDesign: React.FC<CardDesignProps> = ({ headLine, words, img, imgSrc, w
         {/* Skeleton Loader for Text */}
         {loading ? (
           <div className="p-6">
-            <div className="w-full h-6 bg-gray-300 rounded-md mb-2 animate-pulse"></div> {/* Placeholder for Headline */}
-            <div className="w-full h-4 bg-gray-300 rounded-md mb-4 animate-pulse"></div> {/* Placeholder for Words */}
+            <div className="w-full h-4 bg-gray-300 rounded-md mb-2 animate-pulse"></div>
+            <div className="w-1/2 h-4 bg-gray-300 rounded-md mb-2 animate-pulse"></div>  {/* Placeholder for Headline */}
+            <div className="w-1/3 h-4 bg-gray-300 rounded-md mb-4 animate-pulse"></div> {/* Placeholder for Words */}
           </div>
         ) : (
           <div className="p-6">
