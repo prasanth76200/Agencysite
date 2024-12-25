@@ -1,6 +1,6 @@
 // src/components/Footer.js
 const Hookie = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
 
   return (
     <footer className="w-full pt-3 pb-20" id="contact">
